@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Hemograma completo</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--
+    <div class="container">
+        <form action="">
+            <h1 class="titulo-azul-rey">Hemograma completo</h1>
+            <br>
+            <div class="form">
+                <label for="nombre">Nombre completo:</label>
+                <input class="rectangulo" type="text" size="10" style="width: 300px;" id="nombre" name="nombre">
+                <br>
+
+                <label for="sexo" size="40px">Sexo:</label>
+                <select class="rectangulo" id="sexo" name="sexo">
+                    <option value="">Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+
+                <br>
+                <label class="edad" for="edad">Edad:</label>
+                <input class="rectangulo" type="text" style="width: 300px;" id="edad" name="edad"
+                    class="form-control form-control-sm">
+
+            </div>
+            <h3>Por favor ingrese los siguientes datos:</h3>
+            <br>
+
+            <div class="label-group">
+                <label class="centertext" for="hemo">Hemoglobina:</label>
+                <div class="input-group">
+                    <input class="rectangulo" type="text" id="hemo" name="hemo" class="form-control"
+                        aria-describedby="hemo-addon">
+                    <div class="input-group-append"></div>
+                </div>
+            </div>
+            <div class="label-group">
+                <label for="globulos_rojos">Recuento de glóbulos rojos:</label>
+                <div class="input-group">
+                    <input class="rectangulo" type="text" id="globulos_rojos" name="globulos_rojos"
+                        aria-describedby="globulos_rojos-addon">
+
+                </div>
+            </div>
+            <div class="label-group">
+                <label for="hematocritos">Hematocritos:</label>
+                <div class="input-group">
+                    <input type="text" class="rectangulo" aria-describedby="hematocritos-addon">
+                    <div class="input-group-append"></div>
+                </div>
+            </div>
+            <div class="label-group">
+                <label for="globulos_blancos">Recuento de glóbulos blancos:</label>
+                <div class="input-group">
+                    <input class="rectangulo" type="text" id="globulos_blancos" name="globulos_blancos"
+                        aria-describedby="globulos_blancos-addon">
+                    <div class="input-group-append"></div>
+
+                </div>
+                <div class="label-group">
+
+
+                    <label for="plaquetas">Recuento de plaquetas:</label>
+                    <div class="input-group">
+                        <input class="rectangulo" type="text" id="plaquetas" name="plaquetas" class="form-control"
+                            aria-describedby="plaquetas-addon">
+                        <div class="input-group-append">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </div>
+-->
+<form>
+    <h1>Hemograma completo</h1>
+    <h2>Ingrese los siguientes datos</h2>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="genero">Seleccione su género:</label>
+    <select id="genero" name="genero" required>
+        <option value="">--Seleccione--</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+    </select>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
+    <div class="datos">
+        <h2>Por favor ingrese los siguientes datos</h2>
+        <label for="hemoglobina">Hemoglobina:</label>
+        <input type="number" id="hemoglobina" name="hemoglobina" required>
+        <label for="globulos_rojos">Recuento de glóbulos rojos:</label>
+        <input type="number" id="globulos_rojos" name="globulos_rojos" required>
+        <label for="hematocritos">Hematocritos:</label>
+        <input type="number" id="hematocritos" name="hematocritos" required>
+        <label for="globulos_blancos">Recuento de glóbulos blancos:</label>
+        <input type="number" id="globulos_blancos" name="globulos_blancos" required>
+        <label for="plaquetas">Recuento de plaquetas:</label>
+        <input type="number" id="plaquetas" name="plaquetas" required>
+    </div>
+    <div class="button-container">
+    <button type="submit" class="submit">Enviar</button>
+    </div>
+</form>
+<footer>
+    <h3>copyright Medipig®</h3>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+
+body {
+	background-image: url('./medicalPig.jpeg.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container{
+	background-color: rgb(241, 242, 244);
+	margin: 20px auto;
+	padding: 20px;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.uroTitulo{
+	color: rgb(41, 41, 240);
+	text-align: center;
+	padding-top: 20px;
+}
+
+.primerSeccion{
+	display:flex ;
+	justify-content: space-around;
+	padding: auto;
+
+}
+
+label{
+	display: block;
+    margin-bottom: 5px;
+}
+
+.rectangulo{
+	background-color:  rgb(192, 192, 255) ;
+	border: 0.1px solid rgb(41, 41, 240);
+	width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .submit-button {
+	background-color: blue;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  .submit-button:hover {
+    background-color: #fff;
+    color: rgb(41, 41, 240);
+    border: 1px solid rgb(41, 41, 240);
+  }
+
+footer{ 
+	background-color: rgb(41, 41, 240);
+	margin: 0;
+	padding: 20px;
+	color: rgb(241, 242, 244);
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+    label {
+        margin-bottom: 0;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+}

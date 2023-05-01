@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+   
+  <body>
+    <h1>Uroanálisis</h1>
+    <p class="indicacion">Ingrese los siguientes datos:</p>
+    <div class="section">
+      <h2>Datos básicos</h2>
+      <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+        </select>
+      </form>
+    </div>
+    <div class="section">
+      <h2>Análisis macroscópico</h2>
+      <form>
+        <label for="color">Color:</label>
+        <select id="color" name="color" required>
+          <option value="">Seleccione una opción</option>
+          <option value="no-color">No color</option>
+          <option value="paja-palida">Paja pálida</option>
+          <option value="amarillo-transparente">Amarillo transparente</option>
+          <option value="amarillo-oscuro">Amarillo oscuro</option>
+          <option value="ambar">Ámbar</option>
+          <option value="rojo">Rojo</option>
+          <option value="naranja">Naranja</option>
+          <option value="azul">Azul</option>
+          <option value="verde">Verde</option>
+          <option value="morado">Morado</option>
+          <option value="espuma">Espuma</option>
+        </select>
+        <label for="aspecto">Aspecto:</label>
+        <select id="aspecto" name="aspecto" required>
+          <option value="">Seleccione una opción</option>
+          <option value="clara">Clara</option>
+          <option value="turbia">Turbia</option>
+          <option value="oscura">Oscura</option>
+        </select>
+      </form>
+    </div>
+    <div class="section">
+      <h2>Análisis microscópico</h2>
+      <form>
+        <label for="leucitos">Leucitos:</label>
+        <input type="number" id="leucitos" name="leucitos" required>
+        <label for="densidad">Densidad:</label>
+        <input type="number" id="densidad" name="densidad" required>
+        <label for="germenes">Gérmenes:</label>
+        <input type="text" id="germenes" name="germenes" required>
+        <label for="creatinina">Creatinina:</label>
+        <input type="number" id="creatinina" name="creatinina" required>
+      </form>
+
+</body>
+</html>
